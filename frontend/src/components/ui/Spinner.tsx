@@ -28,8 +28,8 @@ const Spinner = () => {
       <h1>Movie Recommendation</h1>
       {movies &&(
         <div>
-          <h1>{movies.name}</h1>
-          <iframe src={embedUrl} width="560" height="315"></iframe>
+          <h1 className='text-7xl'>{movies.name}</h1>
+          <iframe src={embedUrl} width="560" height="315" allowFullScreen allow='autoplay; picture-in-picture;'></iframe>
           <h1 className='font-bold'>Description of the movie</h1>
           <h2 className='font-light'>{movies.description}</h2>
         </div>

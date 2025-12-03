@@ -28,7 +28,7 @@ app.get('/', async(req, res) => {
         });
         
 
-        const firstMovie = apiData.data.similar.results[1];
+        const firstMovie = apiData.data.similar.results[Math.floor(Math.random() * 20) + 1];
         
         res.json({
             recommendations: firstMovie
